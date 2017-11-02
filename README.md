@@ -14,7 +14,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库
  
 #### 常用方法
  
-##### string:生成随机字符串
+#### string:生成随机字符串
     
 - string(number):从默认字符串(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789)里返回number个随机字符
 
@@ -23,7 +23,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库
     ```
      
     ```php
-    返回：af或2f或81
+    返回：af或Bf或2f或0H或81
     ```
 - string(number, string):从指定字符串string里返回number个随机字符
 
@@ -44,7 +44,15 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库
     ```php
     返回：SHN或WS或81或1或a
     ```
-    
+- string(min-max):从指定字符串里返回min-max个随机字符
+
+    ```php
+    示例：$mock->string('1-3', 'gouguoyin');
+    ```
+     
+    ```php
+    返回：n或uo或ogy
+    ```    
 ##### number:生成随机数字
     
 - number(number, numbers)
