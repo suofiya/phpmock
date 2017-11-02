@@ -1,4 +1,4 @@
-PHPMOCK，是一个生成MOCK模拟数据的PHP类库
+PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRAP](http://phprap.gouguoyin.cn/)项目中；
 ## 使用
 #### 引入类
  
@@ -76,3 +76,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库
 - 演示网站：[apidoc.gouguoyin.cn](http://apidoc.gouguoyin.cn)
 - 作者博客：[www.gouguoyin.cn](http://www.gouguoyin.cn/about.html)
 - 官方QQ群：421537504 <a style="margin-left:10px" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=d49826b55d1759513ce5d68253b3f0589b227587edf87059aa08125e620b73c0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="GoPHP官方交流群" title="GoPHP官方交流群"></a>
+
+
+
+    
