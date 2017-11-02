@@ -1,2 +1,2 @@
 # phpmock
-php mock serve
+php实现的生成MOCK模拟数据类
