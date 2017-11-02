@@ -1,8 +1,18 @@
-PHPMOCK，是一个生成MOCK模拟数据的PHP类库
+[PHPRAP，是一个PHP轻量级开源API接口文档管理系统，致力于减少前后端沟通成本，提高团队协作开发效率，打造PHP版的RAP。](http://phprap.gouguoyin.cn)
+
 ## 使用
 
  - 引入类
+ 
+     ```php
+      include_once($_SERVER['DOCUMENT_ROOT']."/mock.php");
+     ```
+     
  - 实例化类
+ 
+     ```php
+      $mock = new mock();
+     ```
  
 ## 联系
 
@@ -11,7 +21,3 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库
 - 演示网站：[apidoc.gouguoyin.cn](http://apidoc.gouguoyin.cn)
 - 作者博客：[www.gouguoyin.cn](http://www.gouguoyin.cn/about.html)
 - 官方QQ群：421537504 <a style="margin-left:10px" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=d49826b55d1759513ce5d68253b3f0589b227587edf87059aa08125e620b73c0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="GoPHP官方交流群" title="GoPHP官方交流群"></a>
-
-
-
-    
