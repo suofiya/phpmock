@@ -16,7 +16,16 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库
  
 ##### string:生成随机字符串
     
-- string(number, string)
+- string(number):返回number个随机字符
+
+    ```php
+    示例：$mock->string(2);
+    ```
+     
+    ```php
+    返回：af
+    ```
+     
 - string(min-max, string)
     
 ##### number:生成随机数字
