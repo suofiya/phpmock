@@ -1,27 +1,30 @@
 PHPMOCK，是一个生成MOCK模拟数据的PHP类库
 ## 使用
-### 引入类
+#### 引入类
  
  ```php
   include_once($_SERVER['DOCUMENT_ROOT']."/mock.php");
  ```
      
-### 实例化类
+#### 实例化类
  
  ```php
   $mock = new mock();
  ```
-### string:生成随机字符串
+ 
+#### 常用方法
+ 
+##### string:生成随机字符串
     
 - string(number, string)
 - string(min-max, string)
     
-### number:生成随机数字
+##### number:生成随机数字
     
 - number(number, numbers)
 - number(min-max, numbers)
     
-### float:生成随机浮点型
+##### float:生成随机浮点型
     
 - number(number, number)
 - number(min-max, number)
