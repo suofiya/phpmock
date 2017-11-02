@@ -67,6 +67,10 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
 
 ##### 4. boolean:生成随机布尔值
 
+- boolean():随机返回true或false
+- number(0):返回false
+- number(1):返回true
+
 ##### 5. arr:生成随机数组
     
 ## 联系
