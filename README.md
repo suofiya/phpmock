@@ -13,20 +13,20 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库
      ```
 ### string:生成随机字符串
     
-    - string(number, string)
-    - string(min-max, string)
+- string(number, string)
+- string(min-max, string)
     
 ### number:生成随机数字
     
-    - number(number, numbers)
-    - number(min-max, numbers)
+- number(number, numbers)
+- number(min-max, numbers)
     
 ### float:生成随机浮点型
     
-    - number(number, number)
-    - number(min-max, number)
-    - number(number, min-max)
-    - number(min-max, min-max)
+- number(number, number)
+- number(min-max, number)
+- number(number, min-max)
+- number(min-max, min-max)
     
 ## 联系
 
