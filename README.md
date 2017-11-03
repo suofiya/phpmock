@@ -431,7 +431,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：`江苏省`或`浙江省`或`甘肃省`
     ```   
   
-- province('code'):返回随机省份编码
+- *province('code')*:返回随机省份编码
 
 
     ```php
@@ -444,7 +444,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
      
 ##### 15. city:返回随机城市   
  
-- city()或city('title'):返回随机城市名
+- *city()或city('title')*:返回随机城市名
 
 
     ```php
@@ -455,7 +455,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：`天津市`或`上海市`或`南京市`
     ```   
  
-- city('code'):返回随机城市编码
+- *city('code')*:返回随机城市编码
 
 
     ```php
@@ -468,7 +468,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
      
 ##### 16. district:返回随机区县   
  
-- district()或district('title'):返回随机区县名
+- *district()或district('title')*:返回随机区县名
 
 
     ```php
@@ -479,7 +479,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：`东城区`或`小店区`或`铁西区`
     ```   
  
-- district('code'):返回随机区县编码
+- *district('code')*:返回随机区县编码
 
 
     ```php
@@ -492,7 +492,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     
 ##### 17. zip:返回随机邮编 
 
-- zip():返回随机邮编(v4)
+- *zip()*:返回随机邮编(v4)
 
 
     ```php
@@ -505,7 +505,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
       
 ##### 18. ip:返回随机IP  
  
-- ip():返回随机IP(v4)
+- *ip()*:返回随机IP(v4)
 
 
     ```php
@@ -517,7 +517,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```   
 ##### 19. id_card:返回随机身份证号  
  
-- id_card():返回随机身份证号(中国大陆)
+- *id_card()*:返回随机身份证号(中国大陆)
 
 
     ```php
@@ -529,7 +529,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```   
 ##### 20. cn_name:返回随机中文名字 
  
-- cn_name():返回随机中文名字 
+- *cn_name()*:返回随机中文名字 
 
 
     ```php
@@ -546,7 +546,3 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
 - PHPRAP：[phprap.gouguoyin.cn](http://phprap.gouguoyin.cn)
 - 作者博客：[www.gouguoyin.cn](http://www.gouguoyin.cn/about.html)
 - 官方QQ群：421537504 <a style="margin-left:10px" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=d49826b55d1759513ce5d68253b3f0589b227587edf87059aa08125e620b73c0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="GoPHP官方交流群" title="GoPHP官方交流群"></a>
-
-
-
-    
