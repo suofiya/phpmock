@@ -55,8 +55,24 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```    
 ##### 2. number:生成随机数字
     
-- number(number, numbers)
-- number(min-max, numbers)
+- number(number):从默认数字里返回number个随机数字
+
+    ```php
+    示例：$mock->number(4);
+    ```
+     
+    ```php
+    返回：7559或0729
+    ```
+- number(number, numbers):从指定数字里返回number个随机数字
+
+    ```php
+    示例：$mock->number(4, '56789');
+    ```
+     
+    ```php
+    返回：5855或7659
+    ```
     
 ##### 3. float:生成随机浮点型
     
