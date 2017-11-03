@@ -353,7 +353,8 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：CMBC或BOC或BCM
     ```   
-    
+##### 12. region:返回随机区域
+  
 - region():返回随机区域
 
 
@@ -364,7 +365,54 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：华南或东北或华北
     ```   
-                                                                
+##### 13. province:返回随机省份
+  
+- province()或province('title'):返回随机省份名
+
+
+    ```php
+    示例：$mock->province()或$mock->province('title');
+    ```
+         
+    ```php
+    返回：江苏省或浙江省或甘肃省
+    ```   
+  
+- province('code'):返回随机省份编码
+
+
+    ```php
+    示例：$mock->province('code');
+    ```
+         
+    ```php
+    返回：150000或410000或140000
+    ```  
+     
+##### 14. city:返回随机城市   
+ 
+- city()或city('title'):返回随机城市名
+
+
+    ```php
+    示例：$mock->city()或$mock->city('title');
+    ```
+         
+    ```php
+    返回：天津市或上海市或南京市
+    ```   
+ 
+- city('code'):返回随机城市编码
+
+
+    ```php
+    示例：$mock->city('code');
+    ```
+         
+    ```php
+    返回：640100或230100或440100
+    ```   
+                                                                                        
 ## 联系
 
 - 如果您在使用过程中有任何疑问，或有好的意见和想法，请通过以下途径联系我或者新建 [Issue](https://github.com/gouguoyin/phprap/issues)  讨论新特性或者变更。
