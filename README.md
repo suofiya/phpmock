@@ -291,7 +291,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```
          
     ```php
-    返回：`#9267a5`或`#d43367`
+    返回：#9267a5或#d43367
     ```   
     
 - color('rgb'):返回rgb格式颜色 
@@ -317,7 +317,60 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：`6JznU1@yahoo.com`或`613824@qq.com`或`BSaXu8@163.com`
     ```   
-##### 10. mobile:生成随机手机号
+##### 10. email:生成随机网址
+    
+- url():返回随机网址
+
+
+    ```php
+    示例：$mock->url();
+    ```
+         
+    ```php
+    返回：`https://www.taobao.com/9hcBLK.htm`或`https://www.gouguoyin.cn/GlSd6.asp`或`http://www.taobao.com/XmkPAgBt.html`
+    ```  
+- url(protocols):从协议数组protocols中随机返回一个作为网址的协议部分
+
+
+    ```php
+    示例：$mock->url(array('http', 'https', 'ftp'));
+    ```
+         
+    ```php
+    返回：`ftp://www.taobao.com/qJd0.jsp`或`https://www.taobao.com/U2Z5Ly.html`或`https://www.baidu.com/NZKxm.json`
+    ```  
+- url(array(), domains):从域名数组domains中随机返回一个作为网址的域名部分组成随机网址
+
+
+    ```php
+    示例：$mock->url(array(),array('www.gouguyin.cn', 'www.phprap.com', 'phprap.gouguoyin.cn'));
+    ```
+         
+    ```php
+    返回：`http://www.phprap.com/xiByQ2nm.json`或`http://www.gouguyin.cn/IzLc.asp`或`https://www.phprap.com/ZL1z8dIo.asp`
+    ```  
+- url(array(), array(), suffixs):从网址后缀suffixs中随机返回一个作为网址的后缀部分组成随机网址
+
+
+    ```php
+    示例：$mock->url(array(),array(),array('png', 'json', 'html'));
+    ```
+         
+    ```php
+    返回：`https://www.csdn.net/sFAXoRP.png`或`https://www.baidu.com/JZk0o.json`或`http://www.csdn.net/v7tFr.html`
+    ```  
+- url(protocols, domains, suffixs):从协议数组protocols中随机返回一个作为网址的协议部分，从域名数组domains中随机返回一个作为网址的域名部分，从网址后缀数组suffixs中随机返回一个作为网址的后缀部分组成随机网址
+
+
+    ```php
+    示例：$mock->url(array('http', 'https', 'ftp'),array('www.baidu.com', 'www.qq.com'),array('png', 'json', 'html'));
+    ```
+         
+    ```php
+    返回：`https://www.baidu.com/i6CU.json`或`https://www.qq.com/JhS1.json`或`ftp://www.baidu.com/d0eqESn.html`
+    ```  
+                                               
+##### 11. mobile:生成随机手机号
     
 - mobile():返回随机邮箱
 
@@ -330,7 +383,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：`18624158057`或`13088904960`或`18273265934`
     ```   
     
-##### 11. bank:生成随机银行
+##### 12. bank:生成随机银行
     
 - bank()或bank('title'):返回随机银行名
 
@@ -353,7 +406,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：`CMBC`或`BOC`或`BCM`
     ```   
-##### 12. region:返回随机区域
+##### 13. region:返回随机区域
   
 - region():返回随机区域
 
@@ -365,7 +418,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：`华南`或`东北`或`华北`
     ```   
-##### 13. province:返回随机省份
+##### 14. province:返回随机省份
   
 - province()或province('title'):返回随机省份名
 
@@ -389,7 +442,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：150000或410000或140000
     ```  
      
-##### 14. city:返回随机城市   
+##### 15. city:返回随机城市   
  
 - city()或city('title'):返回随机城市名
 
@@ -413,7 +466,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：640100或230100或440100
     ```   
      
-##### 15. district:返回随机区县   
+##### 16. district:返回随机区县   
  
 - district()或district('title'):返回随机区县名
 
@@ -436,7 +489,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：110101或130102或210106
     ```   
-##### 16. ip:返回随机IP  
+##### 17. ip:返回随机IP  
  
 - ip():返回随机IP(v4)
 
@@ -448,7 +501,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：171.15.213.40或210.35.118.71或58.55.46.5
     ```   
-##### 17. id_card:返回随机身份证号  
+##### 18. id_card:返回随机身份证号  
  
 - id_card():返回随机身份证号(中国大陆)
 
@@ -460,7 +513,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：610401197006160288或511723195007018323或51068219601231677x
     ```   
-##### 17. cn_name:返回随机中文名字 
+##### 19. cn_name:返回随机中文名字 
  
 - cn_name():返回随机中文名字 
 
@@ -480,7 +533,3 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
 - 演示网站：[apidoc.gouguoyin.cn](http://apidoc.gouguoyin.cn)
 - 作者博客：[www.gouguoyin.cn](http://www.gouguoyin.cn/about.html)
 - 官方QQ群：421537504 <a style="margin-left:10px" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=d49826b55d1759513ce5d68253b3f0589b227587edf87059aa08125e620b73c0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="GoPHP官方交流群" title="GoPHP官方交流群"></a>
-
-
-
-    
