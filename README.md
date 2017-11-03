@@ -84,7 +84,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：5855或7659
     ```
     
-- number(min-max):从默认数字(0123456789)里返回min-max个随机数字
+- number(min-max):从min和max之间返回1个随机数字
 
 
     ```php
@@ -93,17 +93,6 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
      
     ```php
     返回：693或3594或01675
-    ```
-    
-- number(min-max, numbers):从指定数字numbers里返回min-max个随机数字
-
-
-    ```php
-    示例：$mock->number('2-4', '123456');
-    ```
-     
-    ```php
-    返回：63或251或6345
     ```    
       
 ##### 3. float:生成随机浮点型
@@ -259,11 +248,11 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
       
 ##### 7. date:生成随机日期、时间
     
-- date():返回Y-m-d H:i:s格式时间
+- date()或date('Y-m-d H:i:s'):返回Y-m-d H:i:s格式时间
 
 
     ```php
-    示例：$mock->date();
+    示例：$mock->date()或$mock->date('Y-m-d H:i:s');
     ```
          
     ```php
@@ -298,7 +287,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
 
 
     ```php
-    示例：$mock->或color('hex');
+    示例：$mock->color()或$mock->color('hex');
     ```
          
     ```php
@@ -309,13 +298,38 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
 
 
     ```php
-    示例：$mock->或color('rgb');
+    示例：$mock->color('rgb');
     ```
          
     ```php
     返回：rgb(253,58,51)或rgb(236,159,25)
     ```   
-                                      
+    
+##### 9. email:生成随机邮箱
+    
+- email():返回随机邮箱
+
+
+    ```php
+    示例：$mock->email();
+    ```
+         
+    ```php
+    返回：6JznU1@yahoo.com或613824@qq.com或BSaXu8@163.com
+    ```   
+##### 10. mobile:生成随机手机号
+    
+- mobile():返回随机邮箱
+
+
+    ```php
+    示例：$mock->mobile();
+    ```
+         
+    ```php
+    返回：18624158057或13088904960或18273265934
+    ```   
+                                              
 ## 联系
 
 - 如果您在使用过程中有任何疑问，或有好的意见和想法，请通过以下途径联系我或者新建 [Issue](https://github.com/gouguoyin/phprap/issues)  讨论新特性或者变更。
