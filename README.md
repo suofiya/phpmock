@@ -44,7 +44,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：SHN或WS或81或1或a
     ```
-- string(min-max):从指定字符串里返回min-max个随机字符
+- string(min-max, strings):从指定字符串里返回min-max个随机字符
 
     ```php
     示例：$mock->string('1-3', 'gouguoyin');
@@ -55,7 +55,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```    
 ##### 2. number:生成随机数字
     
-- number(number):从默认数字里返回number个随机数字
+- number(number):从默认数字(0123456789)里返回number个随机数字
 
     ```php
     示例：$mock->number(4);
@@ -73,7 +73,24 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：5855或7659
     ```
-    
+- number(min-max):从默认数字(0123456789)里返回min-max个随机数字
+
+    ```php
+    示例：$mock->number('3-5');
+    ```
+     
+    ```php
+    返回：693或3594或01675
+    ```
+- number(min-max, numbers):从指定数字里返回min-max个随机数字
+
+    ```php
+    示例：$mock->number('2-4', '123456');
+    ```
+     
+    ```php
+    返回：63或251或6345
+    ```      
 ##### 3. float:生成随机浮点型
     
 - float(number, number)
@@ -123,7 +140,3 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
 - 演示网站：[apidoc.gouguoyin.cn](http://apidoc.gouguoyin.cn)
 - 作者博客：[www.gouguoyin.cn](http://www.gouguoyin.cn/about.html)
 - 官方QQ群：421537504 <a style="margin-left:10px" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=d49826b55d1759513ce5d68253b3f0589b227587edf87059aa08125e620b73c0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="GoPHP官方交流群" title="GoPHP官方交流群"></a>
-
-
-
-    
