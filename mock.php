@@ -61,8 +61,6 @@ class mock {
 
             list($min, $max) = explode('-', $rule);
 
-            $max = $max > strlen($value) ? strlen($value)-1 : $max;
-
             return mt_rand($min, $max);
 
         }
@@ -143,14 +141,10 @@ class mock {
 
         }
 
-        if(false !== strpos($rule, '-')){
+        $integer = $this->number($rule);
+        $float   = $this->number($length);
 
-            $integer = $this->number($rule);
-            $float   = $this->number($length);
-
-            return $integer . '.' . $float;
-
-        }
+        return $integer . '.' . $float;
     }
 
     /**
@@ -300,31 +294,44 @@ class mock {
      * @param array $suffix
      * @return string
      */
-    public function url($protocol,$domain, $suffix = array())
+    public function url($protocols = array(),$domains = array(), $suffixs = array())
     {
 
-        if(!$protocol){
+        if(!$protocols){
 
             $data = array('http', 'https');
 
-            $protocol = $data[array_rand($data, 1)];
+        }else{
+
+            $data = $protocols;
+
         }
 
-        if(!$domain){
+        $protocol = $data[array_rand($data, 1)];
+
+        if(!$domains){
 
             $data = array('www.baidu.com', 'www.qq.com', 'www.taobao.com','www.csdn.net','www.gouguoyin.cn');
 
-            $domain  = $data[array_rand($data, 1)];
+        }else{
+
+            $data = $domains;
 
         }
 
-        if(!$suffix){
+        $domain  = $data[array_rand($data, 1)];
+
+        if(!$suffixs){
 
             $data = array('html', 'htm', 'json', 'py', 'jsp', 'asp');
 
-            $suffix = $data[array_rand($data, 1)];
+        }else{
+
+            $data = $suffixs;
 
         }
+
+        $suffix = $data[array_rand($data, 1)];
 
         return $protocol .'://' . $domain .'/'. $this->string('4-8') .'.'. $suffix;
 
@@ -504,7 +511,7 @@ class mock {
 
         $key = array_rand($data, 1);
 
-        if($format == 'ab'){
+        if($format == 'code'){
 
             return $key;
 
@@ -629,8 +636,14 @@ class mock {
 
     }
 
+    /**
+     * 随机邮编
+     * @return int|string
+     */
     public function zip()
-    {}
+    {
+        return $this->number('100000-860000');
+    }
 
     /**
      * 随机IP(v4)
