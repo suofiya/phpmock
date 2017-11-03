@@ -329,7 +329,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：`https://www.taobao.com/9hcBLK.htm`或`https://www.gouguoyin.cn/GlSd6.asp`或`http://www.taobao.com/XmkPAgBt.html`
     ```  
-- url(protocols):从协议数组protocols中随机返回一个作为网址的协议部分
+- url(protocols):从数组protocols中随机返回一个作为网址的协议部分
 
 
     ```php
@@ -339,7 +339,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：`ftp://www.taobao.com/qJd0.jsp`或`https://www.taobao.com/U2Z5Ly.html`或`https://www.baidu.com/NZKxm.json`
     ```  
-- url(array(), domains):从域名数组domains中随机返回一个作为网址的域名部分组成随机网址
+- url(array(), domains):从数组domains中随机返回一个作为网址的域名部分组成随机网址
 
 
     ```php
@@ -349,7 +349,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：`http://www.phprap.com/xiByQ2nm.json`或`http://www.gouguyin.cn/IzLc.asp`或`https://www.phprap.com/ZL1z8dIo.asp`
     ```  
-- url(array(), array(), suffixs):从网址后缀suffixs中随机返回一个作为网址的后缀部分组成随机网址
+- url(array(), array(), suffixs):从数组suffixs中随机返回一个作为网址的后缀部分组成随机网址
 
 
     ```php
@@ -359,7 +359,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：`https://www.csdn.net/sFAXoRP.png`或`https://www.baidu.com/JZk0o.json`或`http://www.csdn.net/v7tFr.html`
     ```  
-- url(protocols, domains, suffixs):从协议数组protocols中随机返回一个作为网址的协议部分，从域名数组domains中随机返回一个作为网址的域名部分，从网址后缀数组suffixs中随机返回一个作为网址的后缀部分组成随机网址
+- url(protocols, domains, suffixs):从数组protocols中随机返回一个作为网址的协议部分，从数组domains中随机返回一个作为网址的域名部分，从数组suffixs中随机返回一个作为网址的后缀部分组成随机网址
 
 
     ```php
@@ -372,7 +372,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
                                                
 ##### 11. mobile:生成随机手机号
     
-- mobile():返回随机邮箱
+- **mobile()**:返回随机邮箱
 
 
     ```php
