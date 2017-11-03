@@ -16,7 +16,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
  
 #### 1. string:生成随机字符串
     
-- string(number):从默认字符串(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789)里返回number个随机字符
+- *string(number)*:从默认字符串(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789)里返回number个随机字符
 
 
     ```php
@@ -27,7 +27,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：af或Bf或2f或0H或81
     ```
     
-- string(number, strings):从指定字符串strings里返回number个随机字符
+- *string(number, strings)*:从指定字符串strings里返回number个随机字符
 
 
     ```php
@@ -38,7 +38,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：gg或ui或ng
     ```
          
-- string(min-max):从默认字符串(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789)里返回min-max个随机字符
+- *string(min-max)*:从默认字符串(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789)里返回min-max个随机字符
 
 
     ```php
@@ -49,7 +49,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：SHN或WS或81或1或a
     ```
     
-- string(min-max, strings):从指定字符串strings里返回min-max个随机字符
+- *string(min-max, strings)*:从指定字符串strings里返回min-max个随机字符
 
 
     ```php
@@ -62,7 +62,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
      
 ##### 2. number:生成随机数字
     
-- number(number):从默认数字(0123456789)里返回number个随机数字
+- *number(number)*:从默认数字(0123456789)里返回number个随机数字
 
 
     ```php
@@ -73,7 +73,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：7559或0729
     ```
     
-- number(number, numbers):从指定数字numbers里返回number个随机数字
+- *number(number, numbers)*:从指定数字numbers里返回number个随机数字
 
 
     ```php
@@ -84,7 +84,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：5855或7659
     ```
     
-- number(min-max):从min和max之间返回1个随机数字
+- *number(min-max)*:从min和max之间返回1个随机数字
 
 
     ```php
@@ -97,7 +97,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
       
 ##### 3. float:生成随机浮点型
     
-- float(number, number):从默认数字(0123456789)中返回number个数字作为整数部分,从默认数字(0123456789)中返回number个数字作为小数部分
+- *float(number, number)*:从默认数字(0123456789)中返回number个数字作为整数部分,从默认数字(0123456789)中返回number个数字作为小数部分
 
 
     ```php
@@ -108,7 +108,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：628.06或416.86或152.88
     ```
     
-- float(min-max, number):从默认数字(0123456789)中返回min-max个数字作为整数部分,从默认数字(0123456789)中返回number个数字作为小数部分
+- *float(min-max, number)*:从默认数字(0123456789)中返回min-max个数字作为整数部分,从默认数字(0123456789)中返回number个数字作为小数部分
 
 
     ```php
@@ -119,7 +119,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：78.96或987.38或9378.20
     ```
     
-- float(number, min-max):从默认数字(0123456789)中返回number个数字作为整数部分,从默认数字(0123456789)中返回min-max个数字作为小数部分
+- *float(number, min-max)*:从默认数字(0123456789)中返回number个数字作为整数部分,从默认数字(0123456789)中返回min-max个数字作为小数部分
 
 
     ```php
@@ -130,7 +130,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：196.32或202.285或083.66
     ```
     
-- float(min-max, min-max):从默认数字(0123456789)中返回min-max个数字作为整数部分,从默认数字(0123456789)中返回min-max个数字作为小数部分
+- *float(min-max, min-max)*:从默认数字(0123456789)中返回min-max个数字作为整数部分,从默认数字(0123456789)中返回min-max个数字作为小数部分
 
 
     ```php
@@ -143,7 +143,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     
 ##### 4. boolean:生成随机布尔值
 
-- boolean():随机返回true或false
+- *boolean()*:随机返回true或false
 
 
     ```php
@@ -154,7 +154,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：`true`或`false`
     ```  
     
-- boolean(0):返回false
+- *boolean(0)*:返回false
 
 
     ```php
@@ -165,7 +165,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：`false`
     ```  
     
-- boolean(1):返回true
+- *boolean(1)*:返回true
 
 
     ```php
@@ -178,7 +178,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     
 ##### 5. arr:生成随机数组
 
-- arr(number, array):从指定数组array里返回number个随机数组
+- *arr(number, array)*:从指定数组array里返回number个随机数组
 
 
     ```php
@@ -199,7 +199,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
        )
     ```    
       
-- arr(min-max, array):从指定数组array里返回min-max个随机数组
+- *arr(min-max, array)*:从指定数组array里返回min-max个随机数组
 
     
     ```php
@@ -224,7 +224,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
 
 ##### 6. price:生成随机价格
 
-- price(number):从默认数字(0123456789)中返回number个数字作为整数部分,从默认数字(0123456789)中返回2个数字作为小数部分
+- *price(number)*:从默认数字(0123456789)中返回number个数字作为整数部分,从默认数字(0123456789)中返回2个数字作为小数部分
 
 
     ```php
@@ -235,7 +235,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：828.94或390.21
     ```   
 
-- price(number, number):从默认数字(0123456789)中返回number个数字作为整数部分,从默认数字(0123456789)中返回number个数字作为小数部分
+- *price(number, number)*:从默认数字(0123456789)中返回number个数字作为整数部分,从默认数字(0123456789)中返回number个数字作为小数部分
 
 
     ```php
@@ -248,7 +248,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
       
 ##### 7. date:生成随机日期、时间
     
-- date()或date('Y-m-d H:i:s'):返回Y-m-d H:i:s格式时间
+- *date()或date('Y-m-d H:i:s')*:返回Y-m-d H:i:s格式时间
 
 
     ```php
@@ -259,7 +259,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：2017-11-03 11:21:30
     ```   
     
-- date('Y-m-d'):返回Y-m-d格式日期
+- *date('Y-m-d')*:返回Y-m-d格式日期
 
 
     ```php
@@ -270,7 +270,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：2017-11-03
     ```   
     
-- date('H:i:s'):返回H:i:s格式时间
+- *date('H:i:s')*:返回H:i:s格式时间
 
 
     ```php
@@ -283,7 +283,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     
 ##### 8. color:生成随机颜色
     
-- color()或color('hex'):返回十六进位制颜色 
+- *color()或color('hex')*:返回十六进位制颜色 
 
 
     ```php
@@ -294,7 +294,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：#9267a5或#d43367
     ```   
     
-- color('rgb'):返回rgb格式颜色 
+- *color('rgb')*:返回rgb格式颜色 
 
 
     ```php
@@ -307,7 +307,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     
 ##### 9. email:生成随机邮箱
     
-- email():返回随机邮箱
+- *email()*:返回随机邮箱
 
 
     ```php
@@ -319,7 +319,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```   
 ##### 10. email:生成随机网址
     
-- url():返回随机网址
+- *url()*:返回随机网址
 
 
     ```php
@@ -329,7 +329,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：`https://www.taobao.com/9hcBLK.htm`或`https://www.gouguoyin.cn/GlSd6.asp`或`http://www.taobao.com/XmkPAgBt.html`
     ```  
-- url(protocols):从数组protocols中随机返回一个作为网址的协议部分
+- *url(protocols)*:从数组protocols中随机返回一个作为网址的协议部分
 
 
     ```php
@@ -339,7 +339,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：`ftp://www.taobao.com/qJd0.jsp`或`https://www.taobao.com/U2Z5Ly.html`或`https://www.baidu.com/NZKxm.json`
     ```  
-- url(array(), domains):从数组domains中随机返回一个作为网址的域名部分组成随机网址
+- *url(array(), domains)*:从数组domains中随机返回一个作为网址的域名部分组成随机网址
 
 
     ```php
@@ -349,7 +349,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：`http://www.phprap.com/xiByQ2nm.json`或`http://www.gouguyin.cn/IzLc.asp`或`https://www.phprap.com/ZL1z8dIo.asp`
     ```  
-- url(array(), array(), suffixs):从数组suffixs中随机返回一个作为网址的后缀部分组成随机网址
+- *url(array(), array(), suffixs)*:从数组suffixs中随机返回一个作为网址的后缀部分组成随机网址
 
 
     ```php
@@ -359,7 +359,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：`https://www.csdn.net/sFAXoRP.png`或`https://www.baidu.com/JZk0o.json`或`http://www.csdn.net/v7tFr.html`
     ```  
-- url(protocols, domains, suffixs):从数组protocols中随机返回一个作为网址的协议部分，从数组domains中随机返回一个作为网址的域名部分，从数组suffixs中随机返回一个作为网址的后缀部分组成随机网址
+- *url(protocols, domains, suffixs)*:从数组protocols中随机返回一个作为网址的协议部分，从数组domains中随机返回一个作为网址的域名部分，从数组suffixs中随机返回一个作为网址的后缀部分组成随机网址
 
 
     ```php
@@ -372,7 +372,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
                                                
 ##### 11. mobile:生成随机手机号
     
-- **mobile()**:返回随机邮箱
+- *mobile()*:返回随机邮箱
 
 
     ```php
@@ -385,7 +385,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     
 ##### 12. bank:生成随机银行
     
-- **bank()或bank('title')**:返回随机银行名
+- *bank()或bank('title')*:返回随机银行名
 
 
     ```php
@@ -396,7 +396,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：`中国光大银行`或`交通银行`或`中国建设银行`
     ```   
     
-- **bank('ab')**:返回随机银行英文缩写
+- *bank('ab')*:返回随机银行英文缩写
 
 
     ```php
@@ -408,7 +408,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```   
 ##### 13. region:返回随机区域
   
-- **region()**:返回随机区域
+- *region()*:返回随机区域
 
 
     ```php
