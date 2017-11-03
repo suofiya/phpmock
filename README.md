@@ -18,6 +18,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     
 - string(number):从默认字符串(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789)里返回number个随机字符
 
+
     ```php
     示例：$mock->string(2);
     ```
@@ -25,7 +26,9 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：af或Bf或2f或0H或81
     ```
+    
 - string(number, string):从指定字符串string里返回number个随机字符
+
 
     ```php
     示例：$mock->string(2, 'gouguoyin');
@@ -37,6 +40,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
          
 - string(min-max):从默认字符串(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789)里返回min-max个随机字符
 
+
     ```php
     示例：$mock->string('1-3');
     ```
@@ -44,7 +48,9 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：SHN或WS或81或1或a
     ```
+    
 - string(min-max, strings):从指定字符串里返回min-max个随机字符
+
 
     ```php
     示例：$mock->string('1-3', 'gouguoyin');
@@ -52,10 +58,12 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
      
     ```php
     返回：n或uo或ogy
-    ```    
+    ```   
+     
 ##### 2. number:生成随机数字
     
 - number(number):从默认数字(0123456789)里返回number个随机数字
+
 
     ```php
     示例：$mock->number(4);
@@ -64,7 +72,9 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：7559或0729
     ```
+    
 - number(number, numbers):从指定数字里返回number个随机数字
+
 
     ```php
     示例：$mock->number(4, '56789');
@@ -73,7 +83,9 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：5855或7659
     ```
+    
 - number(min-max):从默认数字(0123456789)里返回min-max个随机数字
+
 
     ```php
     示例：$mock->number('3-5');
@@ -82,7 +94,9 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：693或3594或01675
     ```
+    
 - number(min-max, numbers):从指定数字里返回min-max个随机数字
+
 
     ```php
     示例：$mock->number('2-4', '123456');
@@ -90,11 +104,32 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
      
     ```php
     返回：63或251或6345
-    ```      
+    ```    
+      
 ##### 3. float:生成随机浮点型
     
-- float(number, number)
-- float(min-max, number)
+- float(number, decimal):从默认数字(0123456789)中返回number个数字作为整数部分,从默认数字(0123456789)中返回decimal个数字作为小数部分
+
+
+    ```php
+    示例：$mock->float(3, 2);
+    ```
+     
+    ```php
+    返回：628.06或416.86或152.88
+    ```
+    
+- float(min-max, decimal):从默认数字(0123456789)中返回min-max个数字作为整数部分,从默认数字(0123456789)中返回decimal个数字作为小数部分
+
+
+    ```php
+    示例：$mock->float('2-4', 2);
+    ```
+     
+    ```php
+    返回：78.96或987.38或9378.27
+    ```
+    
 - float(number, min-max)
 - float(min-max, min-max)
 
@@ -140,3 +175,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
 - 演示网站：[apidoc.gouguoyin.cn](http://apidoc.gouguoyin.cn)
 - 作者博客：[www.gouguoyin.cn](http://www.gouguoyin.cn/about.html)
 - 官方QQ群：421537504 <a style="margin-left:10px" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=d49826b55d1759513ce5d68253b3f0589b227587edf87059aa08125e620b73c0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="GoPHP官方交流群" title="GoPHP官方交流群"></a>
+
+
+
+    
