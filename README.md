@@ -24,7 +24,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```
      
     ```php
-    返回：`af`或`Bf`或`2f`或`0H`或`81`
+    返回：af或Bf或2f或0H或81
     ```
     
 - string(number, strings):从指定字符串strings里返回number个随机字符
@@ -35,7 +35,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```
      
     ```php
-    返回：`gg`或`ui`或`ng`
+    返回：gg或ui或ng
     ```
          
 - string(min-max):从默认字符串(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789)里返回min-max个随机字符
