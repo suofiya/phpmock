@@ -24,7 +24,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```
      
     ```php
-    返回：af或Bf或2f或0H或81
+    返回：`af`或`Bf`或`2f`或`0H`或`81`
     ```
     
 - string(number, strings):从指定字符串strings里返回number个随机字符
@@ -35,7 +35,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```
      
     ```php
-    返回：gg或ui或ng
+    返回：`gg`或`ui`或`ng`
     ```
          
 - string(min-max):从默认字符串(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789)里返回min-max个随机字符
@@ -291,7 +291,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```
          
     ```php
-    返回：#9267a5或#d43367
+    返回：`#9267a5`或`#d43367`
     ```   
     
 - color('rgb'):返回rgb格式颜色 
@@ -315,7 +315,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```
          
     ```php
-    返回：6JznU1@yahoo.com或613824@qq.com或BSaXu8@163.com
+    返回：`6JznU1@yahoo.com`或`613824@qq.com`或`BSaXu8@163.com`
     ```   
 ##### 10. mobile:生成随机手机号
     
@@ -327,7 +327,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```
          
     ```php
-    返回：18624158057或13088904960或18273265934
+    返回：`18624158057`或`13088904960`或`18273265934`
     ```   
     
 ##### 11. bank:生成随机银行
@@ -340,7 +340,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```
          
     ```php
-    返回：中国光大银行或交通银行或中国建设银行
+    返回：`中国光大银行`或`交通银行`或`中国建设银行`
     ```   
     
 - bank('ab'):返回随机银行英文缩写
@@ -351,7 +351,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```
          
     ```php
-    返回：CMBC或BOC或BCM
+    返回：`CMBC`或`BOC`或`BCM`
     ```   
 ##### 12. region:返回随机区域
   
@@ -363,7 +363,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```
          
     ```php
-    返回：华南或东北或华北
+    返回：`华南`或`东北`或`华北`
     ```   
 ##### 13. province:返回随机省份
   
@@ -375,7 +375,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```
          
     ```php
-    返回：江苏省或浙江省或甘肃省
+    返回：`江苏省`或`浙江省`或`甘肃省`
     ```   
   
 - province('code'):返回随机省份编码
@@ -423,7 +423,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```
          
     ```php
-    返回：东城区或小店区或铁西区
+    返回：`东城区`或`小店区`或`铁西区`
     ```   
  
 - district('code'):返回随机区县编码
