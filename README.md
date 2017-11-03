@@ -60,16 +60,43 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     
 ##### 3. float:生成随机浮点型
     
-- number(number, number)
-- number(min-max, number)
-- number(number, min-max)
-- number(min-max, min-max)
+- float(number, number)
+- float(min-max, number)
+- float(number, min-max)
+- float(min-max, min-max)
 
 ##### 4. boolean:生成随机布尔值
 
 - boolean():随机返回true或false
-- number(0):返回false
-- number(1):返回true
+
+    ```php
+    示例：$mock->boolean();
+    ```
+     
+    ```php
+    返回：true或false
+    ```  
+    
+- boolean(0):返回false
+
+    ```php
+    示例：$mock->boolean(0);
+    ```
+     
+    ```php
+    返回：false
+    ```  
+    
+- boolean(1):返回true
+
+    ```php
+    示例：$mock->boolean(1);
+    ```
+     
+    ```php
+    返回：true
+    ```  
+    
 
 ##### 5. arr:生成随机数组
     
