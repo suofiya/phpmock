@@ -385,7 +385,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     
 ##### 12. bank:生成随机银行
     
-- bank()或bank('title'):返回随机银行名
+- **bank()或bank('title')**:返回随机银行名
 
 
     ```php
@@ -396,7 +396,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：`中国光大银行`或`交通银行`或`中国建设银行`
     ```   
     
-- bank('ab'):返回随机银行英文缩写
+- **bank('ab')**:返回随机银行英文缩写
 
 
     ```php
@@ -408,7 +408,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```   
 ##### 13. region:返回随机区域
   
-- region():返回随机区域
+- **region()**:返回随机区域
 
 
     ```php
@@ -420,7 +420,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```   
 ##### 14. province:返回随机省份
   
-- province()或province('title'):返回随机省份名
+- *province()或province('title')*:返回随机省份名
 
 
     ```php
