@@ -329,7 +329,42 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```php
     返回：18624158057或13088904960或18273265934
     ```   
-                                              
+    
+##### 11. bank:生成随机银行
+    
+- bank()或bank('title'):返回随机银行名
+
+
+    ```php
+    示例：$mock->bank()或$mock->bank('title');
+    ```
+         
+    ```php
+    返回：中国光大银行或交通银行或中国建设银行
+    ```   
+    
+- bank('ab'):返回随机银行英文缩写
+
+
+    ```php
+    示例：$mock->bank('ab');
+    ```
+         
+    ```php
+    返回：CMBC或BOC或BCM
+    ```   
+    
+- region():返回随机区域
+
+
+    ```php
+    示例：$mock->region();
+    ```
+         
+    ```php
+    返回：华南或东北或华北
+    ```   
+                                                                
 ## 联系
 
 - 如果您在使用过程中有任何疑问，或有好的意见和想法，请通过以下途径联系我或者新建 [Issue](https://github.com/gouguoyin/phprap/issues)  讨论新特性或者变更。
