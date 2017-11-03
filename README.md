@@ -27,7 +27,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：af或Bf或2f或0H或81
     ```
     
-- string(number, string):从指定字符串string里返回number个随机字符
+- string(number, strings):从指定字符串strings里返回number个随机字符
 
 
     ```php
@@ -49,7 +49,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：SHN或WS或81或1或a
     ```
     
-- string(min-max, strings):从指定字符串里返回min-max个随机字符
+- string(min-max, strings):从指定字符串strings里返回min-max个随机字符
 
 
     ```php
@@ -73,7 +73,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：7559或0729
     ```
     
-- number(number, numbers):从指定数字里返回number个随机数字
+- number(number, numbers):从指定数字numbers里返回number个随机数字
 
 
     ```php
@@ -95,7 +95,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：693或3594或01675
     ```
     
-- number(min-max, numbers):从指定数字里返回min-max个随机数字
+- number(min-max, numbers):从指定数字numbers里返回min-max个随机数字
 
 
     ```php
@@ -156,6 +156,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
 
 - boolean():随机返回true或false
 
+
     ```php
     示例：$mock->boolean();
     ```
@@ -165,6 +166,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```  
     
 - boolean(0):返回false
+
 
     ```php
     示例：$mock->boolean(0);
@@ -176,6 +178,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     
 - boolean(1):返回true
 
+
     ```php
     示例：$mock->boolean(1);
     ```
@@ -184,8 +187,50 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     返回：true
     ```  
     
-
 ##### 5. arr:生成随机数组
+
+- arr(number, array):从指定数组array里返回number个随机数组
+
+
+    ```php
+    示例：$mock->arr(2, array('勾国印', '勾国磊', '张雨康', '张东川'));
+    ```
+     
+    ```php
+    返回：Array
+       (
+           [0] => 勾国磊
+           [1] => 勾国印
+       )
+       或
+       Array
+       (
+           [0] => 张雨康
+           [1] => 勾国印
+       )
+    ```    
+      
+- arr(min-max, array):从指定数组array里返回min-max个随机数组
+
+
+  ```php
+  示例：$mock->arr('2-3', array('勾国印', '勾国磊', '张雨康', '张东川'));
+  ```
+   
+  ```php
+  返回：Array
+     (
+         [0] => 张雨康
+         [1] => 勾国磊
+     )
+     或
+     Array
+     (
+         [0] => 张东川
+         [1] => 张雨康
+         [2] => 勾国印
+     )
+  ```    
     
 ## 联系
 
