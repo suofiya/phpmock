@@ -511,7 +511,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
     ```
          
     ```php
-    返回：610401197006160288或511723195007018323或51068219601231677x
+    返回：`610401197006160288`或`511723195007018323`或`51068219601231677x`
     ```   
 ##### 19. cn_name:返回随机中文名字 
  
@@ -533,3 +533,7 @@ PHPMOCK，是一个生成MOCK模拟数据的PHP类库，目前已应用于[PHPRA
 - 演示网站：[apidoc.gouguoyin.cn](http://apidoc.gouguoyin.cn)
 - 作者博客：[www.gouguoyin.cn](http://www.gouguoyin.cn/about.html)
 - 官方QQ群：421537504 <a style="margin-left:10px" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=d49826b55d1759513ce5d68253b3f0589b227587edf87059aa08125e620b73c0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="GoPHP官方交流群" title="GoPHP官方交流群"></a>
+
+
+
+    
